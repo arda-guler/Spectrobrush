@@ -48,7 +48,7 @@ def brightness_array_to_sound(brightness_array, duration, min_freq, max_freq, sa
     time_per_column = duration / num_columns
 
     # log scale
-    frequencies = np.logspace(np.log10(min_freq), np.log10(max_freq), num=num_rows)[::-1]
+    frequencies = np.linspace(min_freq, max_freq, num=num_rows)[::-1]
 
     sound_data = np.zeros(int(duration * sample_rate), dtype=np.float32)
 
