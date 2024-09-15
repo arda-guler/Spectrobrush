@@ -4,4 +4,9 @@ A command line tool that paints images (or text) onto audio spectograms. You can
 
 Duration and frequency ranges are adjustable.
 
-Use '-h' or '--help' to get help.
+Easiest way to use is simply:
+```
+sb.py <input_filename>
+```
+
+Use '-h' or '--help' to see all possible arguments.
